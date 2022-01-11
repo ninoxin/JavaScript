@@ -1,17 +1,43 @@
-title = document.getElementsByTagName('h1')
-console.log(title);
-button = document.getElementsByClassName('handler_btn')
-console.log(button);
-buttonTiming = document.querySelector('.screen-btn')
-console.log(buttonTiming);
-percent = document.querySelectorAll('.other-items.percent')
-number = document.querySelectorAll('.other-items.number')
-console.log(percent, number);
-range = document.querySelector('.rollback input')
-console.log(range);
-span = document.querySelector('.rollback .range-value')
-console.log(span);
-input = document.getElementsByClassName('total-input')
-console.log(input);
-let = document.querySelectorAll('.screen')
-console.log(let);
+const book = document.querySelectorAll('.book')
+const title = document.querySelectorAll('a')
+const background = document.querySelector('body')
+const adv = document.querySelector('.adv')
+const list = document.querySelectorAll('ul')
+const item = document.querySelectorAll('li')
+const newElem = document.createElement('li')
+
+book[0].before(book[1])
+book[2].before(book[4])
+book[2].before(book[3])
+book[2].before(book[5])
+
+background.style.backgroundImage = 'url(./image/you-dont-know-js.jpg)'
+
+
+title[4].textContent = 'Книга 3. this и Прототипы Объектов'
+
+adv.remove();
+
+
+list[0].append(item[3])
+list[0].append(item[6])
+list[0].append(item[8])
+list[0].append(item[4])
+list[0].append(item[5])
+list[0].append(item[9])
+list[0].append(item[10])
+
+list[5].append(item[55])
+list[5].append(item[49])
+list[5].append(item[50])
+list[5].append(item[48])
+list[5].append(item[52])
+list[5].append(item[53])
+list[5].append(item[51])
+list[5].append(item[54])
+list[5].append(item[56])
+
+
+newElem.textContent = 'Глава 8: За пределами ES6'
+item[26].before(newElem)
+
